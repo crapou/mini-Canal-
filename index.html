@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CANAL+ Concept</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #0a0a0a; /* plus foncé */
+      border-bottom: 1px solid #444; /* trait gris */
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-left img {
+      height: 30px;
+      margin-right: 20px;
+    }
+
+    .navbar-left a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    .navbar-left a:first-of-type {
+      color: #e53935;
+    }
+
+    .navbar-left a:not(:first-of-type):hover {
+      color: #e53935;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .navbar-right img {
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .navbar-right .robot-avatar {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .navbar-right .robot-avatar:hover {
+      transform: scale(1.1);
+    }
+
+    .main-banners {
+      display: flex;
+      gap: 20px;
+      padding: 60px 20px 20px 20px;
+      justify-content: center;
+    }
+
+    .main-banners img {
+      width: 45%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .categories {
+      display: flex;
+      gap: 20px;
+      padding: 10px 20px 30px 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .category {
+      width: 180px;
+      height: 100px;
+      border-radius: 1px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      padding-bottom: 10px;
+      text-shadow: 1px 1px 3px black;
+      cursor: pointer;
+    }
+
+    .cat-cinema { background-image: url("https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20101445.png?v=1751359250174"); }
+    .cat-series { background-image: url("https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20101640.png?v=1751359308716"); }
+    .cat-sport { background-image: url("https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20101654.png?v=1751359325535"); }
+    .cat-jeunesse { background-image: url("https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20101710.png?v=1751359407526"); }
+    .cat-doc { background-image: url("https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20103627.png?v=1751359414414"); }
+    .cat-divertissement { background-image: url("https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20103701.png?v=1751359305612"); }
+  </style>
+
+  <script>
+    function redirectToCinema() {
+      window.location.href = "cinema.html";
+    }
+  </script>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Logo_Canal%2B_1995.svg.png?v=1751296686617" alt="CANAL+ Logo">
+      <a href="#">Accueil</a>
+      <a href="#">En direct</a>
+      <a href="#">Programme TV</a>
+      <a href="#">Chaînes & Apps</a>
+      <a href="#">Mes vidéos</a>
+    </div>
+    <div class="navbar-right">
+      <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-02%20225252.png?v=1751489620353" alt="Profil">
+      <a href="chatbot.html">
+        <img class="robot-avatar" src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/canal-celebre-creativite-humaine-nouvelle-campagne-F.avif?v=1751404173919" alt="Le R0_BO +">
+      </a>
+    </div>
+  </div>
+
+  <div class="main-banners">
+    <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20101336.png?v=1751359424895" alt="Saint-Ex">
+    <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20101358.png?v=1751359436837" alt="Hot Ones">
+  </div>
+
+  <div class="categories">
+    <div class="category cat-cinema" onclick="redirectToCinema()"></div>
+    <div class="category cat-series"></div>
+    <div class="category cat-sport"></div>
+    <div class="category cat-jeunesse"></div>
+    <div class="category cat-doc"></div>
+    <div class="category cat-divertissement"></div>
+  </div>
+
+</body>
+</html>

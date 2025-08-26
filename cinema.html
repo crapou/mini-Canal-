@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinéma - CANAL+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1a1a1a;
+    }
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-left img {
+      height: 30px;
+      margin-right: 20px;
+    }
+    .navbar-left a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-family: Verdana, sans-serif;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    .navbar-left a:hover {
+      color: #e53935;
+    }
+    .navbar-left a.active {
+      color: #e53935;
+    }
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .navbar-right img {
+      height: 36px;
+      border-radius: 50%;
+    }
+    .section-title {
+      font-size: 28px;
+      margin: 20px;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 10px 20px;
+    }
+    .filters span {
+      cursor: pointer;
+      font-weight: bold;
+      color: #ccc;
+    }
+    .filters span.active, .filters span:hover {
+      color: #e53935;
+      border-bottom: 2px solid #e53935;
+    }
+    .films {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 0 20px 40px;
+    }
+    .film {
+      cursor: pointer;
+    }
+    .film img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .film-title {
+      font-weight: bold;
+      margin: 8px 0 4px;
+    }
+    .film-genre {
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Logo_Canal%2B_1995.svg.png?v=1751296686617" alt="CANAL+ Logo">
+      <a href="index.html">Accueil</a>
+      <a href="#" class="active">Cinéma</a>
+      <a href="#">En direct</a>
+      <a href="#">Programme TV</a>
+      <a href="#">Chaînes & Apps</a>
+      <a href="#">Mes vidéos</a>
+    </div>
+    <div class="navbar-right">
+      <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20103744.png?v=1751360356212" alt="Profil">
+    </div>
+  </div>
+
+  <h2 class="section-title">Cinéma</h2>
+  <div class="filters">
+    <span class="active">Tous les films</span>
+    <span>Recommandé pour vous</span>
+    <span>Le cinéma de CANAL+</span>
+    <span>Action</span>
+    <span>Comédie</span>
+    <span>Fantastique</span>
+    <span>Émotion</span>
+    <span>Policier</span>
+    <span>Horreur</span>
+    <span>Suspense</span>
+    <span>Jeunesse</span>
+  </div>
+
+  <div class="films">
+    <div class="film" onclick="location.href='saint-ex.html'">
+      <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20135257.png?v=1751371913998" alt="Saint-Ex">
+      <div class="film-title">Saint-Ex</div>
+      <div class="film-genre">Film biopic</div>
+    </div>
+   <div class="film" onclick="location.href='amourouf.html'">
+  <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20140501.png?v=1751372305476" alt="L'Amour ouf">
+  <div class="film-title">L'Amour ouf</div>
+  <div class="film-genre">Film Drame</div>
+</div>
+
+    <div class="film" onclick="location.href='wicked.html'">
+  <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20135328.png?v=1751371947624" alt="Wicked">
+  <div class="film-title">Wicked</div>
+  <div class="film-genre">Film Comédie musicale</div>
+</div>
+
+    <div class="film" onclick="location.href='outrun.html'">
+  <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20135346.png?v=1751371981446" alt="The Outrun">
+  <div class="film-title">The Outrun</div>
+  <div class="film-genre">Film Drame</div>
+</div>
+
+    <div class="film" onclick="location.href='planeteb.html'">
+  <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20141733.png?v=1751372312883" alt="Planète B">
+  <div class="film-title">Planète B</div>
+  <div class="film-genre">Film Science-fiction</div>
+</div>
+
+    <div class="film" onclick="location.href='sarah.html'">
+  <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20141746.png?v=1751372325414" alt="Sarah Bernhardt, la Divine">
+  <div class="film-title">Sarah Bernhardt, la Divine</div>
+  <div class="film-genre">Film biopic</div>
+</div>
+
+    <div class="film" onclick="location.href='race.html'">
+  <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20135317.png?v=1751371570710" alt="Race for Glory">
+  <div class="film-title">Race for Glory : Audi vs Lancia</div>
+  <div class="film-genre">Film Drame</div>
+</div>
+
+    <div class="film" onclick="location.href='dune.html'">
+  <img src="https://cdn.glitch.global/5d8e360a-1f5a-4abc-a7f7-1ee6aa0aa095/Capture%20d'%C3%A9cran%202025-07-01%20140128.png?v=1751372301045" alt="Dune">
+  <div class="film-title">Dune : deuxième partie</div>
+  <div class="film-genre">Film Science-fiction</div>
+</div>
+
+  </div>
+</body>
+</html>
